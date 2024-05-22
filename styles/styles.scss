@@ -1281,7 +1281,8 @@ circle {
 
 .linebox{
   display: block;
-  width: 42px;
+  width: 22px;
+  padding: 2px !important;
 }
 
 @media screen and (max-width: 414px) {

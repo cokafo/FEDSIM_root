@@ -110,8 +110,17 @@
         <button id="sect-8-btn"  class="darkblock wordbox" 
         onmouseover="javascript:findBox('sect-8-box');"
         onmouseout="javascript:loseBox('sect-8-box');"
-        onclick="window.location='#sect-8-box';" taborder="14">
+        onclick="window.location='#sect-8-box';" taborder="13">
             <h1>APM</h1>
+        </button>
+        <div class="infoblock linebox">
+            <hr class="small-line">
+        </div>
+        <button id="sect-9-btn"  class="darkblock wordbox" 
+        onmouseover="javascript:findBox('sect-9-box');"
+        onmouseout="javascript:loseBox('sect-9-box');"
+        onclick="window.location='#sect-9-box';" taborder="14">
+            <h1>SOCOM</h1>
         </button>
     </div>
 </div>
@@ -245,26 +254,35 @@
 <div class="v-buffer no-mobile"></div>
 <!-- fourth row -->
 <div class="flex-wrapper-big" style="display: block !important;">
-    <div class="flex-wrapper">
+    <div class="flex-wrapper" style="display: ruby-text !important;">
+        <div class="bio-spacer">  </div>
         <div id="sect-8-box" class="sectorblock">   <!-- AMP block ---------------------------------->
             <div class="flex-wrapper">
-                <button class="memberblock" onclick="javascript:openBio('bioPopup_EQ');" taborder="26">
+                <button class="memberblock" style="margin:auto;" onclick="javascript:openBio('bioPopup_EQ');" taborder="26">
                     <img src="../assets/img/members/ErinQuick.jpg" class="member-pic" alt="Erin Quick" />
                    <br>
                    <p class="allcaps">Erin Quick</p>
                    <p>Acquisition Quality Sector Director</p>
-                </button>
-                <button class="memberblock" onclick="javascript:openBio('bioPopup_JM');" taborder="21">
-                    <img src="../assets/img/members/JM_pic.png" class="member-pic" alt="Jeff McMullan" />
-                    <br>
-                    <p class="allcaps">Jeff McMullan</p>
-                    <p>SOCOM Sector Director</p>
                 </button>
             </div>
             <div class="sectorbar sector-8" onclick="javascript:openBio('sectorPopup_APM');">
                 <h3>APM Program Division Directors</h3>
             </div>
         </div>
+        <div id="sect-9-box" class="sectorblock">   <!-- SOCOM block ---------------------------------->
+            <div class="flex-wrapper">
+                <button class="memberblock" style="margin:auto;" onclick="javascript:openBio('bioPopup_JM');" taborder="21">
+                    <img src="../assets/img/members/JM_pic.png" class="member-pic" alt="Jeff McMullan" />
+                    <br>
+                    <p class="allcaps">Jeff McMullan</p>
+                    <p>SOCOM Sector Director</p>
+                </button>
+            </div>
+            <div class="sectorbar sector-9" onclick="javascript:openBio('sectorPopup_APM');">
+                <h3>SOCOM Program Division Directors</h3>
+            </div>
+        </div>
+        <div class="bio-spacer">  </div>
     </div>
 </div>
 <!-- begin popups ---->
