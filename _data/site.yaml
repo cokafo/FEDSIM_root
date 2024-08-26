@@ -71,11 +71,6 @@ primary_navigation:
     url: /gettingstarted/
   - name: Industry
     url: /industry/
-    children:
-      - name: Industry
-        url: /industry/
-      - name: FIAC
-        url: /fiac/
   - name: Contact Us
     url: /contact/
 
