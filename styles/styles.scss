@@ -19,11 +19,11 @@ html{
 
 a{
   text-decoration: none;
-  color: #004bbd;
+  color: #00398f;
 }
 
 a:visited{
-  color: #004bbd;
+  color: #00398f;
 }
 
 /* MENU BUTTONS */
@@ -73,8 +73,17 @@ p{
   line-height: 1.5em;
 }
 
-.h4_title{
+.h1_title{
   text-transform: uppercase;
+}
+
+.underlined{
+  text-decoration:underline;
+}
+
+.bufferedText a{
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
 }
 
 @media screen and (max-width: 414px){
@@ -1072,6 +1081,19 @@ circle {
   font-weight: 600;
 }
 
+.numberCircle-darkblue h2, .numberCircle-darkgrey h2, .numberCircle-blue h2{
+  font-size: 1.4em !important;
+  color: var(--fedsim-blue2);
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
+}
+
+.darkblock h3{
+  font-size: 1.2em;
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
+}
+
 @keyframes grow { to { stroke-dasharray: 100 100 } }
 
 .pie.animated circle {
@@ -1354,14 +1376,14 @@ circle {
 hr.small-line{
   border-top: 3px solid var(--fedsim-blue1);}
 
-.sector-1{  background-color: var(--fedsim-pink);}
+.sector-1{  background-color: var(--fedsim-purple);}
 .sector-2{  background-color: var(--fedsim-blue1);}
 .sector-3{  background-color: var(--fedsim-purple);}
 .sector-4{  background-color: var(--fedsim-gold);}
 .sector-5{  background-color: var(--fedsim-darkgrey);}
 .sector-6{  background-color: var(--fedsim-blue3);}
 .sector-7{  background-color: var(--fedsim-litegrey);}
-.sector-8{  background-color: var(--fedsim-blue4);}
+.sector-8{  background-color: var(--fedsim-darkgrey);}
 
 //Bio popout modals
 .dialog-overlay {
