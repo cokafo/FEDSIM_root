@@ -75,7 +75,7 @@
         onmouseover="javascript:findBox('sect-3-box');"
         onmouseout="javascript:loseBox('sect-3-box');"
         onclick="window.location='#sect-3-box';" taborder="9">
-            <h1>DOD</h1>
+            <h1>Defense Health</h1>
         </button>
         <div class="infoblock linebox">
             <hr class="small-line">
@@ -85,15 +85,6 @@
         onmouseout="javascript:loseBox('sect-1-box');"
         onclick="window.location='#sect-1-box';" taborder="7">
             <h1>CIVILIAN</h1>
-        </button>
-        <div class="infoblock linebox">
-            <hr class="small-line">
-        </div>
-        <button id="sect-2-btn"  class="darkblock wordbox" 
-        onmouseover="javascript:findBox('sect-2-box');"
-        onmouseout="javascript:loseBox('sect-2-box');"
-        onclick="window.location='#sect-2-box';" taborder="8">
-            <h1>AIR FORCE</h1>
         </button>
         <div class="infoblock linebox">
             <hr class="small-line">
@@ -121,6 +112,15 @@
         onmouseout="javascript:loseBox('sect-9-box');"
         onclick="window.location='#sect-9-box';" taborder="14">
             <h1>SOCOM</h1>
+        </button>
+        <div class="infoblock linebox">
+            <hr class="small-line">
+        </div>
+        <button id="sect-2-btn"  class="darkblock wordbox" 
+        onmouseover="javascript:findBox('sect-2-box');"
+        onmouseout="javascript:loseBox('sect-2-box');"
+        onclick="window.location='#sect-9-box';" taborder="14">
+            <h1>FORTES</h1>
         </button>
     </div>
 </div>
@@ -157,18 +157,18 @@
             </div>
         </div>
         <div class="bio-spacer"></div>
-        <div id="sect-3-box" class="sectorblock">    <!-- DOD block ---------------------------------->
+        <div id="sect-3-box" class="sectorblock">    <!-- Defense Health block ---------------------------------->
             <div class="flex-wrapper">
                 <button  class="memberblock" style="margin:auto;" onclick="javascript:openBio('bioPopup_KE');" taborder="17">   
                     <img src="../assets/img/members/Ken-Evans.png" class="member-pic" alt="Ken Evans" />
                     <br>
                     <p class="allcaps">Ken Evans</p>
-                    <p>DOD Sector Director</p>
+                    <p>Defense Health Sector Director</p>
                     <br>
                 </button>
             </div>
             <div class="sectorbar sector-3" onclick="javascript:openBio('sectorPopup_DOD');">
-                <h3>DOD Division Directors</h3>
+                <h3>Defense Health Division Directors</h3>
             </div>
         </div>        
     </div>
@@ -192,20 +192,6 @@
             </div>
         </div>
         <div class="bio-spacer"></div>
-        <div id="sect-2-box" class="sectorblock">   <!-- AIR FORCE block ---------------------------------->
-            <div class="flex-wrapper">
-                <button class="memberblock" style="margin:auto;" onclick="javascript:openBio('bioPopup_BG');" taborder="19">
-                    <img src="../assets/img/members/BrookeGill.jpg" class="member-pic" alt="Brooke Gill" />
-                    <br>
-                    <p class="allcaps">Brooke Gill</p>
-                    <p>Air Force Sector Director</p>
-                </button>
-            </div>
-            <div class="sectorbar sector-2" onclick="javascript:openBio('sectorPopup_AIR');">
-                <h3>AIR FORCE Division Directors</h3>
-            </div>
-        </div>
-        <div class="bio-spacer"></div>
         <div id="sect-5-box" class="sectorblock">   <!-- CAPX block ---------------------------------->
             <div class="flex-wrapper">
                 <button class="memberblock" style="margin: auto;" onclick="javascript:openBio('bioPopup_MM');" taborder="20">
@@ -220,6 +206,19 @@
             </div>
         </div>
         <div class="bio-spacer"></div>
+        <div id="sect-2-box" class="sectorblock">   <!-- FORTES block ---------------------------------->
+            <div class="flex-wrapper">
+                <button class="memberblock" style="margin: auto;" onclick="javascript:openBio('bioPopup_LH');" taborder="16">
+                    <img src="../assets/img/members/LateefHynson.jpg" class="member-pic" alt="Lateef Hynson" />
+                    <br>
+                    <p class="allcaps">Lateef Hynson</p>
+                    <p>FORTES Sector Director</p>
+                </button>
+            </div>
+            <div class="sectorbar sector-4" onclick="javascript:openBio('sectorPopup_FORTES');">
+                <h3>FORTES Division Directors</h3>
+            </div>
+        </div>
     </div>
 </div>
 <div class="v-buffer no-mobile"></div>
@@ -228,11 +227,11 @@
     <div class="flex-wrapper">
         <div id="sect-7-box" class="sectorblock">   <!-- APM block ---------------------------------->
             <div class="flex-wrapper">
-                <button class="memberblock" style="margin:auto;" taborder="21">
-                    <img src="../assets/img/members/Jillian_Segarra.jpg" class="member-pic" alt="Jillian Segarra" />
+                <button class="memberblock" style="margin:auto;" onclick="javascript:openBio('bioPopup_MS');" taborder="21">
+                    <img src="../assets/img/members/MikeSkorny3.png" class="member-pic" alt="Mike Skorny" />
                    <br>
-                   <p class="allcaps">Jillian Segarra</p>
-                   <p>APM Acting Sector Director</p>
+                   <p class="allcaps">Mike Skorny</p>
+                   <p>APM Sector Director</p>
                 </button>
             </div>
             <div class="sectorbar sector-8" onclick="javascript:openBio('sectorPopup_APM');">
@@ -368,28 +367,7 @@
             <p style="font-style: italic;">Select anywhere in this box to close.</p>
         </div>
     </div>
-</div>
-<!-- BG popup -->
-<div id="bioPopup_BG" class="dialog-overlay" aria-hidden="true" onclick="javascript:closeBio();">
-    <div class="dialog" role="dialog" >
-        <div class="modalblock">
-            <div class="flex-wrapper">
-                <img src="../assets/img/members/BrookeGill.jpg" class="member-pic" alt="Brooke Gill" />
-                <div class="infoblock">
-                    <span style="font-weight: bold;">
-                        <p class="allcaps">Brooke Gill</p>
-                        <p>Air Force Sector Director</p>
-                    </span>
-                </div>
-            </div>
-            <p>Brooke serves as the Sector Director for AAS Defense’s Air Force Sector. She brings over a decade of acquisition management experience having previously served as a Group Manager in the Navy Sector, Project Manager (PM), Contracting Officer's Representative (COR), and Acquisition Project Manager (APM) at AAS DEFENSE. Brooke has worked on a diverse set of complex IT and professional services requirements for a variety of customers in both the DoD and Civilian Sectors. 
-<br><br>
-             Brooke has her Master’s in Business Administration from George Washington University and undergraduate degree from the University of Richmond. She also holds a FAC/PPM Level III and COR Level III certifications.
-</p>
-            <p style="font-style: italic;">Select anywhere in this box to close.</p>
-        </div>
-    </div>
-</div>          
+</div>         
 <!-- EC popup -->
 <div id="bioPopup_EC" class="dialog-overlay" aria-hidden="true" onclick="javascript:closeBio();">
     <div class="dialog" role="dialog" >
@@ -430,7 +408,7 @@
                     </span>
                 </div>
             </div>
-            <p>As the Deputy Client Executive of AAS Defense, Erin Quick manages the organization's daily operations. Erin ensures that each AAS Defense client receives continuous high-quality acquisition and program management support across the life cycle of each contract. Erin was previously the Acquisition Quality Sector Director. She has also served as an Acquisition Project Manager and was stationed in Stuttgart, Germany from 2016 until October 2020 directly supporting the U.S. Africa and European Commands and their components. While in Germany, Erin was instrumental in growing AAS DEFENSE’s opportunities with Department of Defense (DoD) clients across Europe and Africa.</p>
+            <p>As the Deputy Client Executive of AAS Defense, Erin Quick manages the organization's daily operations. Erin ensures that each AAS Defense client receives continuous high-quality acquisition and program management support across the life cycle of each contract. Erin was previously the Acquisition Quality Sector Director. She has also served as an Acquisition Project Manager and was stationed in Stuttgart, Germany from 2016 until October 2020 directly supporting the U.S. Africa and European Commands and their components. While in Germany, Erin was instrumental in growing AAS DEFENSE’s opportunities with Department of Defense (Defense Health) clients across Europe and Africa.</p>
             <p>Erin has been with GSA since 2009 and with AAS Defense since 2012. In addition to serving as an Acquisition Project Manager, she previously served as a Project Manager/Contracting Officer’s Representative and as a Contract Specialist. Erin earned her bachelor’s degree from Wake Forest University in 2009.</p>
             <p style="font-style: italic;">Select anywhere in this box to close.</p>
         </div>
@@ -489,12 +467,12 @@ Kristen received her BS in Business Logistics from Pennsylvania State University
                 <div class="infoblock">
                     <span style="font-weight: bold;">
                         <p class="allcaps">Ken Evans</p>
-                        <p>DOD Sector Director</p>
+                        <p>Defense Health Sector Director</p>
                     </span>
                 </div>
             </div>
-            <p>Ken Evans is the Sector Director of AAS Defense’s DoD sector. Ken oversees the procurement
-                and management of task orders supporting over 45 DoD organizations, including Joint
+            <p>Ken Evans is the Sector Director of AAS Defense’s Defense Health sector. Ken oversees the procurement
+                and management of task orders supporting over 45 Defense Health organizations, including Joint
                 Improvised Threat Defeat Organization (JIDO), U.S. Central Command, Army Human Resource
                 Command, Joint Strike Fighter, and the NAVAIR Rapid Response Program Office.
                 <br><br>
@@ -594,11 +572,11 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
                 <div class="infoblock">
                     <span style="font-weight: bold;">
                         <p class="allcaps">Stacey Lowenberg</p>
-                        <p>DoD Acquisition Division Director</p>
+                        <p>Defense Health Acquisition Division Director</p>
                     </span>
                 </div>
             </div>
-            <p>Stacey is the Acquisition Group Manager (AGM) with the AAS Defense DoD. Stacey returned to AAS Defense 
+            <p>Stacey is the Acquisition Group Manager (AGM) with the AAS Defense Health. Stacey returned to AAS Defense 
                 after six years with the Department of Justice. During her time at DOJ she awarded and administered the $10B 
                 Integrated Wireless Network (IWN) MAIDIQ contract which was the largest contract ever awarded in the Department’s 
                 history at that time. Stacey has a long history with GSA prior to her time at DOJ. Positions held at AAS Defense 
@@ -641,7 +619,7 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
                 <div class="infoblock">
                     <span style="font-weight: bold;">
                         <p class="allcaps">Michael Skorny</p>
-                        <p>Global Acquisition Division Director</p>
+                        <p>APM Sector Director</p>
                     </span>
                 </div>
             </div>
@@ -826,50 +804,12 @@ Michael is active in organizations that promote government partnerships with ind
         </div>
     </div>
 </div>
-<!-- AIR popup -->
-<div id="sectorPopup_AIR" class="dialog-overlay" aria-hidden="true">
-    <div class="dialog back-grey" role="dialog" onclick="javascript:closeBio();">
-        <div class="modalblock back-grey"  tabindex="0">
-            <div class="sectorbar-wide sector-2">
-                <h3>AIR FORCE DIVISION DIRECTORS</h3>
-                <br>
-            </div>
-            <div class="flex-wrapper">
-                <div class="infoblock back-grey centered">
-                    <img src="../assets/img/members/GregLee.jpg" class="member-pic" alt="Greg Lee" />
-                    <p class="allcaps">Greg <br class="mobile-only">Lee</p>
-                    <p>Acquisition</p>
-                </div>    
-                <div class="infoblock back-grey centered">
-                    <img src="../assets/img/members/IbrahiimKent.jpg" class="member-pic" alt="Ibrahiim Kent" />
-                    <p class="allcaps">Ibrahiim <br class="mobile-only">Kent</p>
-                    <p>Cyber/IT</p>
-                </div>
-            </div>
-            <div class="flex-wrapper">
-                <div class="infoblock back-grey centered">
-                    <img src="../assets/img/members/Dani_Vansickle.png" class="member-pic" alt="Dani Vansickle" />
-                    <p class="allcaps">Dani <br class="mobile-only">Vansickle</p>
-                    <p>Intel/Systems</p>
-                </div>
-                <div class="infoblock back-grey centered">
-                    <img src="../assets/img/members/LateefHynson.jpg" class="member-pic" alt="Lateef Hynson" />
-                    <p class="allcaps">Lateef <br class="mobile-only">Hynson</p>
-                    <p>FCC</p>
-                </div>
-            </div>
-            <div class="infoblock back-grey centered">
-                <p class="small-italic">Select anywhere on this box to close.</p>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- DOD popup -->
 <div id="sectorPopup_DOD" class="dialog-overlay" aria-hidden="true">
     <div class="dialog back-grey" role="dialog" onclick="javascript:closeBio();">
         <div class="modalblock back-grey"  tabindex="0">
             <div class="sectorbar-wide sector-3">
-                <h3>DOD DIVISION DIRECTORS</h3>
+                <h3>DEFENSE HEALTH DIVISION DIRECTORS</h3>
                 <br>
             </div>
             <div class="flex-wrapper">
@@ -886,14 +826,14 @@ Michael is active in organizations that promote government partnerships with ind
                 <div class="infoblock back-grey centered">
                     <img src="../assets/img/members/Larry_Levandowski_2024.jpg" class="member-pic" alt="Larry Levandowski" />
                     <p class="allcaps">Larry <br class="mobile-only">Levandowski</p>
-                    <p>JIDO</p>
+                    <p>DHRA</p>
                 </div>
             </div>
             <div class="flex-wrapper">
                 <div class="infoblock back-grey centered">
                     <img src="../assets/img/members/BruceThibault.jpg" class="member-pic" alt="Bruce Thibault" />
                     <p class="allcaps">Bruce <br class="mobile-only">Thibault</p>
-                    <p>DoD</p>
+                    <p>Defense Health</p>
                 </div>
                 <div class="infoblock back-grey centered">
                     <img src="../assets/img/members/ScottRobertson.jpg" class="member-pic" alt="Scott Robertson" />
@@ -908,14 +848,9 @@ Michael is active in organizations that promote government partnerships with ind
             </div>
             <div class="flex-wrapper">
                 <div class="infoblock back-grey centered">
-                    <img src="../assets/img/members/ShadowM_Icon.png" class="member-pic" alt="TBD" />
-                    <p class="allcaps">TBD</p>
-                    <p>DoD 6</p>
-                </div>
-                <div class="infoblock back-grey centered">
-                    <img src="../assets/img/members/Devyani_Kavathekar.jpg" class="member-pic" alt="Devyani Kavathekar" />
-                    <p class="allcaps">Devyani <br class="mobile-only">Kavathekar</p>
-                    <p>DoD 7</p>
+                    <img src="../assets/img/members/ShadowF_Icon.png" class="member-pic" alt="Jerry Cates" />
+                    <p class="allcaps">Jerry Cates</p>
+                    <p>Cyber Division</p>
                 </div>
             </div>
             <div class="infoblock back-grey centered">
@@ -951,8 +886,8 @@ Michael is active in organizations that promote government partnerships with ind
                     <p>Technology <br>Integrated <br class="mobile-only">Services</p>
                 </div>
                 <div class="infoblock back-grey centered" style="margin-top: 0;">
-                    <img src="../assets/img/members/ShadowM_Icon.png" class="member-pic" alt="TBD" />
-                    <p class="allcaps">TBD</p>
+                    <img src="../assets/img/members/ShadowM_Icon.png" class="member-pic" alt="Joeseph Best" />
+                    <p class="allcaps">Joeseph Best</p>
                     <p>IT</p>
                 </div>
             </div>
@@ -991,26 +926,26 @@ Michael is active in organizations that promote government partnerships with ind
                 <div class="infoblock back-grey centered">
                     <img src="../assets/img/members/spencerburns.jpg" class="member-pic" alt="Spencer Burns" />
                     <p class="allcaps">Spencer <br class="mobile-only">Burns</p>
-                    <p>Naval Systems <br>Program</p>
+                    <p>Technology <br>Transition</p>
                 </div>
             </div>
             <div class="flex-wrapper">
                 <div class="infoblock back-grey centered">
                     <img src="../assets/img/members/AaronYoung.png" class="member-pic" alt="Aaron Young" />
                     <p class="allcaps">Aaron <br class="mobile-only">Young</p>
-                    <p>Sensing <br>Technologies</p>
+                    <p>Systems <br>Integration</p>
                 </div>
                 <div class="infoblock back-grey centered">
                     <img src="../assets/img/members/DomSalli.jpg" class="member-pic" alt="Dom Salli" />
                     <p class="allcaps">Dom <br class="mobile-only">Salli</p>
-                    <p>CapX 3</p>
+                    <p>Technical <br>Support Services</p>
                 </div>
             </div>
             <div class="flex-wrapper">
                 <div class="infoblock back-grey centered">
                     <img src="../assets/img/members/ShadowF_Icon.png" class="member-pic" alt="Jennifer Kara" />
                     <p class="allcaps">Jennifer <br class="mobile-only">Kara</p>
-                    <p>CapX 4</p>
+                    <p>Op Test <br>Demo & Eval</p>
                 </div>
             </div>
             <div class="infoblock back-grey centered">
@@ -1029,9 +964,9 @@ Michael is active in organizations that promote government partnerships with ind
             </div>
             <div class="flex-wrapper">
                 <div class="infoblock back-grey centered">
-                    <img src="../assets/img/members/MikeSkorny3.png" class="member-pic" alt="Mike Skorny" />
-                    <p class="allcaps">Mike <br class="mobile-only">Skorny</p>
-                    <p>Acquisition</p>
+                    <img src="../assets/img/members/ShadowF_Icon.png" class="member-pic" alt="Stephanie Crews" />
+                    <p class="allcaps">Stephanie <br class="mobile-only">Crews</p>
+                    <p>Acting Acquisition</p>
                 </div>    
                 <div class="infoblock back-grey centered">
                     <img src="../assets/img/members/TilaKety.jpg" class="member-pic" alt="Tila Kety" />
@@ -1109,24 +1044,24 @@ Michael is active in organizations that promote government partnerships with ind
                 <div class="infoblock back-grey centered">
                     <img src="../assets/img/members/Sonia_Hammons.JPG" class="member-pic" alt="Sonia Hammons" />
                     <p class="allcaps">Sonia <br class="mobile-only">Hammons</p>
-                    <p>SOCOM 1</p>
+                    <p>SPEAR</p>
                 </div>
                 <div class="infoblock back-grey centered">
                     <img src="../assets/img/members/Dan_Jenkins.jpg" class="member-pic" alt="Dan Jenkins" />
                     <p class="allcaps">Dan <br class="mobile-only">Jenkins</p>
-                    <p>SOCOM 2</p>
+                    <p>FIXAR</p>
                 </div>
             </div>
             <div class="flex-wrapper">
                 <div class="infoblock back-grey centered">
                     <img src="../assets/img/members/Theresa_Vollink.jpg" class="member-pic" alt="Theresa Vollink" />
                     <p class="allcaps">Theresa <br class="mobile-only">Vollink</p>
-                    <p>SOCOM 3</p>
+                    <p>ARMMOR</p>
                 </div>
                 <div class="infoblock back-grey centered">
                     <img src="../assets/img/members/Frank_Bottalico.png" class="member-pic" alt="Frank Bottalico" />
                     <p class="allcaps">Frank <br class="mobile-only">Bottalico</p>
-                    <p>SOCOM 4</p>
+                    <p>VAN</p>
                 </div>
             </div>
             <div class="infoblock back-grey centered">
